@@ -1,14 +1,12 @@
-
 import React from 'react'
-import DentistCard from '../../Common/DentistCard/DentistCard'
+import DentistCardDetailedContainer from '../../Common/DentistDardDetailed/DentistCardDetailed.container'
 
-const DetailsDentist = ({dentist}) => {
-
-  return (
-    <div>
-      <DentistCard dentist={dentist}/>
-    </div>
-  )
+const DetailsDentist = () => {
+	return (
+		<div>
+			<DentistCardDetailedContainer />
+		</div>
+	)
 }
 
 export default DetailsDentist

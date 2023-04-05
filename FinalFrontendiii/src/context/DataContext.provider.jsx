@@ -5,6 +5,7 @@ export const DataContext = createContext()
 const initialState = {
 	dentists: [],
 	dentist: {},
+	favDentists: [],
 }
 
 const reducer = (state, action) => {
@@ -13,6 +14,10 @@ const reducer = (state, action) => {
 			return { ...state, dentists: action.payload }
 		case 'GET_DENTIST':
 			return { ...state, dentist: action.payload }
+		case 'ADD_TO_FAV_DENTISTS':
+			return { ...state, favDentists: JSON.parse(localStorage.getItem('favDentists'))}
+		case 'ADD_TO_LOCAL_STORAGE':
+			return localStorage.setItem(`${action.payload.id}`, JSON.stringify(action.payload))
 		default:
 			return state
 	}
