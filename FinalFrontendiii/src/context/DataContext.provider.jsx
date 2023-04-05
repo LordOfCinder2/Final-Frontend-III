@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react'
+import { addToLocalStorage } from '../services/dataServices'
 
 export const DataContext = createContext()
 
@@ -17,7 +18,7 @@ const reducer = (state, action) => {
 		case 'ADD_TO_FAV_DENTISTS':
 			return { ...state, favDentists: JSON.parse(localStorage.getItem('favDentists'))}
 		case 'ADD_TO_LOCAL_STORAGE':
-			return localStorage.setItem(`${action.payload.id}`, JSON.stringify(action.payload))
+			addToLocalStorage(action.payload)
 		default:
 			return state
 	}

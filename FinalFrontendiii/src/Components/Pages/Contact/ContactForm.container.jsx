@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ContactForm from './ContactForm'
 import Swal from 'sweetalert2'
-import { validateEmail, validateName } from '../../../services/dataValidation'
+import { validateEmail, validateName } from '../../../services/dataServices'
 
 const ContactFormContainer = () => {
 	const [data, setData] = useState({
