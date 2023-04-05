@@ -1,8 +1,13 @@
-import React from 'react'
 
-const DetailsDentist = () => {
+import React from 'react'
+import DentistCard from '../../Common/DentistCard/DentistCard'
+
+const DetailsDentist = ({dentist}) => {
+
   return (
-    <div>DetailsDentist</div>
+    <div>
+      <DentistCard dentist={dentist}/>
+    </div>
   )
 }
 

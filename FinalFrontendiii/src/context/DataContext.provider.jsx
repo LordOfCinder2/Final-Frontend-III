@@ -4,6 +4,7 @@ export const DataContext = createContext()
 
 const initialState = {
 	dentists: [],
+	dentist: {},
 }
 
 const reducer = (state, action) => {
@@ -11,10 +12,7 @@ const reducer = (state, action) => {
 		case 'GET_DENTISTS':
 			return { ...state, dentists: action.payload }
 		case 'GET_DENTIST':
-			let dentist = state.dentists.filter((item) => {
-				item.id === action.payload
-			})
-			return { dentist }
+			return { ...state, dentist: action.payload }
 		default:
 			return state
 	}
