@@ -1,0 +1,32 @@
+.contact{
+ flex-grow: 1;
+}
+.contact-form{
+ height: 100%;
+ display: grid;
+ grid-template-rows: auto 3rem 3rem 3rem auto;
+ grid-template-columns: auto 15rem auto;
+ grid-gap: 1rem;
+}
+
+.contact-form .name-field{
+ grid-row-start: 2;
+ grid-column-start: 2;
+ color: var(--primary-dark-bg-color);
+}
+.email-field{
+ grid-row-start: 3;
+ grid-column-start: 2;
+}
+.contact-form .submit-button{
+ grid-row-start: 4;
+ grid-column-start: 2;
+}
+
+.contact-form .submit-button-dark{
+ background-color: var(--primary-dark-bg-color);
+}
+
+.contact-form .submit-button-light{
+ background-color: var(--primary-light-bg-color);
+}

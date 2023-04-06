@@ -9,21 +9,22 @@ import DentistsContainer from './Components/Pages/Dentists/Dentists.container'
 import DetailsDentistContainer from './Components/Pages/DetailsDentist/DetailsDentist.container'
 import ContactFormContainer from './Components/Pages/Contact/ContactForm.container'
 import FavsContainer from './Components/Pages/Favs/Favs.container'
+import Layout from './Components/Layout/Layout'
+import { ThemeProvider } from '@emotion/react'
 
 function App() {
 	return (
 		<BrowserRouter>
+
 			<ThemeContextProvider>
 				<DataContextProvider>
 					<Routes>
-						<Route element={<NavbarLayout />}>
-							<Route element={<FooterLayout />}>
-								<Route path="/" element={<Home/>} />
-								<Route path="/dentists" element={<DentistsContainer/>} />
-								<Route path="/dentist/:id" element={<DetailsDentistContainer/>} />
-								<Route path="/contact" element={<ContactFormContainer/>} />
-								<Route path="/favs" element={<FavsContainer/>} />
-							</Route>
+						<Route element={<Layout />}>
+							<Route path="/" element={<Home />} />
+							<Route path="/dentists" element={<DentistsContainer />} />
+							<Route path="/dentist/:id" element={<DetailsDentistContainer />} />
+							<Route path="/contact" element={<ContactFormContainer />} />
+							<Route path="/favs" element={<FavsContainer />} />
 						</Route>
 					</Routes>
 				</DataContextProvider>

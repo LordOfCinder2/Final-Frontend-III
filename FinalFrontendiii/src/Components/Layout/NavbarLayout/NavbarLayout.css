@@ -1,6 +1,31 @@
 a{
  text-decoration: none;
 }
-navbar{
- background-color: ;
+.navbar{
+ display: flex;
+ height: 100%;
+}
+.button-container{
+ flex-grow: 1;
+ justify-content: center;
+ align-items: center;
+}
+
+.navbar a button{
+ color:var(--primary-dark-font-color);
+}
+.navbar-dark{
+background-color: var(--primary-dark-bg-color);
+}
+.navbar-light{
+ background-color: var(--primary-light-bg-color);
+}
+.navbar .active-page{
+ background-color: rgb(255, 250, 243);
+}
+.navbar-dark .active-page button{
+ color: var(--primary-dark-bg-color) ;
+}
+.navbar-light .active-page button{
+ color: var(--primary-light-bg-color);
 }

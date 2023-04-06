@@ -1,0 +1,15 @@
+
+.footer-layout .footer {
+ height: 100%;
+	font-size: 0.8rem;
+	font-weight: 300;
+ padding: .5rem;
+}
+.footer-layout .footer-dark {
+	background-color: var(--primary-dark-bg-color);
+	color: var(--primary-dark-font-color);
+}
+.footer-layout .footer-light {
+	background-color: var(--primary-light-bg-color);
+	color: var(--primary-dark-font-color);
+}
