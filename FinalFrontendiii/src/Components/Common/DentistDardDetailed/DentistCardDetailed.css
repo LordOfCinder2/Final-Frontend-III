@@ -1,18 +1,38 @@
-.detailed-dentist-card{
- border-radius: 20px;
- padding: 2rem;
- margin: 2rem;
- width: 400px;
- height: 250px;
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
+.detailed-dentist-card {
+	position: relative;
+	border-radius: 20px;
+	padding: 2rem;
+	margin: 2rem;
+	width: 400px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
-.detailed-dentist-card-dark{
- border: 2px solid var(--primary-dark-bg-color);
+.detailed-dentist-card-dark {
+	border: 2px solid var(--primary-dark-bg-color);
+	color: var(--primary-dark-font-color);
+}
+.detailed-dentist-card-light {
+	border: 2px solid var(--primary-light-bg-color);
+	color: var(--primary-light-bg-color);
+}
+.detailed-dentist-card h1{
+ max-width: 250px;
+}
+
+
+.detailed-dentist-card .details-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.detailed-dentist-card .details-button .details-icon{
+font-size: 3rem;
+}
+.detailed-dentist-card-dark .details-button .details-icon{
  color: var(--primary-dark-font-color);
 }
-.detailed-dentist-card-light{
- border: 2px solid var(--primary-light-bg-color);
+.detailed-dentist-card-light .details-button .details-icon{
  color: var(--primary-light-bg-color);
 }

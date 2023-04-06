@@ -3,8 +3,10 @@ import DentistCard from '../../Common/DentistCard/DentistCard'
 import './Dentists.css'
 import { ThemeContext } from '../../../context/ThemeContext.provider'
 
-const Dentists = ({ dentists, addToFav }) => {
+const Dentists = ({  dataState, addToFav }) => {
+
 	const { state } = useContext(ThemeContext)
+	
 	return (
 		<div
 			className={
@@ -13,7 +15,7 @@ const Dentists = ({ dentists, addToFav }) => {
 					: 'dentists-list dentists-list-light'
 			}
 		>
-			{dentists.map((dentist) => (
+			{dataState.dentists.map((dentist) => (
 				<DentistCard key={dentist.id} dentist={dentist} addToFav={addToFav} />
 			))}
 		</div>

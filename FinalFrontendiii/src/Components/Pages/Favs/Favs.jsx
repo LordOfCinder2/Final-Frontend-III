@@ -3,13 +3,13 @@ import './Favs.css'
 import { ThemeContext } from '../../../context/ThemeContext.provider'
 import DentistCardDetailed from '../../Common/DentistDardDetailed/DentistCardDetailed'
 
-const Favs = ({ favDentists }) => {
+const Favs = ({ favDentists , addToFav}) => {
 	const { state } = useContext(ThemeContext)
 	return (
 		<div className={state.isDark?'favs favs-dark':'favs favs-light'}>
 			{favDentists &&
 				favDentists.map((dentist) => (
-					<DentistCardDetailed dentist={dentist}/>
+					<DentistCardDetailed key={dentist.id} dentist={dentist} addToFav={addToFav}/>
 				))}
 		</div>
 	)

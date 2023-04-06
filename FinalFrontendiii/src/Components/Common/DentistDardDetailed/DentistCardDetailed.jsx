@@ -1,8 +1,13 @@
 import React, { useContext } from 'react'
 import './DentistCardDetailed.css'
 import { ThemeContext } from '../../../context/ThemeContext.provider'
+import { DataContext } from '../../../context/DataContext.provider'
+import { IconButton } from '@mui/material'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 
-const DentistCardDetailed = ({ dentist }) => {
+const DentistCardDetailed = ({ dentist, addToFav }) => {
+	const dataState = useContext(DataContext).state
 	const { state } = useContext(ThemeContext)
 	return (
 		<div
@@ -16,6 +21,19 @@ const DentistCardDetailed = ({ dentist }) => {
 			<h2>{dentist.phone}</h2>
 			<h3>{dentist.email}</h3>
 			<p>{dentist.website}</p>
+			<IconButton
+				className="details-button"
+				onClick={() => {
+					addToFav(dentist)
+				}}
+			>
+				{dataState.favDentists &&
+				dataState.favDentists.some((item) => item.id === dentist.id) ? (
+					<FavoriteIcon className="details-icon" />
+				) : (
+					<FavoriteBorderIcon className="details-icon" />
+				)}
+			</IconButton>
 		</div>
 	)
 }

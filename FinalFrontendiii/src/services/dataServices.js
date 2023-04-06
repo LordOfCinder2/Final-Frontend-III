@@ -7,9 +7,9 @@ export const validateEmail = (email) => {
 }
 
 export const addToLocalStorage = (dentist) => {
-	let newArr = JSON.parse(localStorage.getItem('favDentists'))
-	if (newArr) {
-		if (!newArr.some((item) => dentist.id === item.id)) {
+	let favArr = JSON.parse(localStorage.getItem('favDentists'))
+	if (favArr) {
+		if (!favArr.some((item) => dentist.id === item.id)) {
 			localStorage.setItem(
 				`favDentists`,
 				JSON.stringify([
@@ -17,7 +17,12 @@ export const addToLocalStorage = (dentist) => {
 					dentist,
 				]),
 			)
-    }
+    }else{
+					let newArr = favArr.filter(item=>item.id!==dentist.id)
+					localStorage.setItem(
+						`favDentists`,
+						JSON.stringify(newArr))
+				}
 	} else {
 		localStorage.setItem('favDentists', JSON.stringify([dentist]))
 	}
