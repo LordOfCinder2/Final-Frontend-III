@@ -21,12 +21,12 @@ background-color: var(--primary-dark-bg-color);
 .navbar-light{
  background-color: var(--primary-light-bg-color);
 }
-.navbar .active-page{
- background-color: rgb(255, 250, 243);
-}
+
 .navbar-dark .active-page button{
- color: var(--primary-dark-bg-color) ;
+ color: var(--secondary-light-bg-color) ;
+ background-color: var(--secondary-dark-bg-color);
 }
 .navbar-light .active-page button{
  color: var(--primary-light-bg-color);
+ background-color: var(--secondary-light-bg-color);
 }
