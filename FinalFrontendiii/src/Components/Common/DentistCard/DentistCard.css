@@ -1,0 +1,24 @@
+.card{
+ width: 250px;
+ height: 50px;
+ display: flex;
+ align-items: center;
+ margin: 5px;
+ padding: 5px;
+ border-radius: 10px;
+}
+.card-dark{
+ border: 2px solid var(--primary-dark-font-color);
+}
+.card-dark .card-link, .card-light .card-link{
+ flex-grow: 1;
+}
+.card-dark .card-link .card-label, .card-dark .card-button .card-icon{
+ color: var(--primary-dark-font-color);
+}
+.card-light{
+ border: 2px solid var(--primary-light-bg-color);
+}
+.card-light .card-link .card-label, .card-light .card-button .card-icon{
+ color: var(--primary-light-bg-color);
+}

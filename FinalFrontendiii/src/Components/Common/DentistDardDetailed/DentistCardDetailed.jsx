@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import './DentistCardDetailed.css'
+import { ThemeContext } from '../../../context/ThemeContext.provider'
 
 const DentistCardDetailed = ({ dentist }) => {
+	const { state } = useContext(ThemeContext)
 	return (
-		<div>
-			<p>{dentist.name}</p>
-			<p>{dentist.phone}</p>
-			<p>{dentist.email}</p>
+		<div
+			className={
+				state.isDark
+					? 'detailed-dentist-card detailed-dentist-card-dark'
+					: 'detailed-dentist-card detailed-dentist-card-light'
+			}
+		>
+			<h1>{dentist.name}</h1>
+			<h2>{dentist.phone}</h2>
+			<h3>{dentist.email}</h3>
 			<p>{dentist.website}</p>
 		</div>
 	)

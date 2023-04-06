@@ -8,6 +8,9 @@
 	--primary-dark-bg-color: rgb(50, 47, 141);
 	--primary-dark-font-color: rgb(255, 250, 243);
 
+	--secondary-dark-bg-color: #242424;
 
- --primary-light-bg-color: steelblue;
+	--secondary-light-bg-color: #ffffff;
+
+ --primary-light-bg-color: #1976d2;
 }

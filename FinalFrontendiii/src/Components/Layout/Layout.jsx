@@ -5,13 +5,13 @@ import FooterLayout from './FooterLayout/FooterLayout'
 import './Layout.css'
 
 const Layout = () => {
-  return (
-   <div className='layout'>
-    <NavbarLayout/>
-    <Outlet/>
-    <FooterLayout/>
-   </div>
-  )
+	return (
+		<div className="layout">
+			<NavbarLayout />
+			<Outlet />
+			<FooterLayout />
+		</div>
+	)
 }
 
 export default Layout

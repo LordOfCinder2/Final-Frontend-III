@@ -1,26 +1,33 @@
-.contact{
- flex-grow: 1;
+
+.contact-form-dark{
+ background-color: var(--secondary-dark-bg-color);
+}
+.contact-form-light{
+ background-color: var(--secondary-light-bg-color);
 }
 .contact-form{
- height: 100%;
- display: grid;
- grid-template-rows: auto 3rem 3rem 3rem auto;
- grid-template-columns: auto 15rem auto;
- grid-gap: 1rem;
+ flex-grow: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.contact-form .label-text-dark, .contact-form .label-text-dark.Mui-focused{
+ color: aliceblue;
+}
+.contact-form .label-text-light, .contact-form .label-text-light.Mui-focused{
+ color: var(--primary-light-bg-color);
 }
 
 .contact-form .name-field{
- grid-row-start: 2;
- grid-column-start: 2;
- color: var(--primary-dark-bg-color);
+ margin: 5px;
 }
-.email-field{
- grid-row-start: 3;
- grid-column-start: 2;
+.contact-form .email-field{
+ margin: 5px;
 }
 .contact-form .submit-button{
- grid-row-start: 4;
- grid-column-start: 2;
+ margin: 5px;
+ padding: 8px 25px;
 }
 
 .contact-form .submit-button-dark{
