@@ -15,20 +15,18 @@ const ContactFormContainer = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-    if(validateName(data.name)&&validateEmail(data.email)){
-      Swal.fire(
-        'Gracias!',
-        `${data.name}, te contactaremos cuando antes vía mail`,
-        'success'
-      )
-    }else{
-      Swal.fire(
-        {
-          icon:'error',
-          text: 'Por favor verifique su información nuevamente'
-        }
-      )
-    }
+		if (validateName(data.name) && validateEmail(data.email)) {
+			Swal.fire(
+				'Gracias!',
+				`${data.name}, te contactaremos cuando antes vía mail`,
+				'success',
+			)
+		} else {
+			Swal.fire({
+				icon: 'error',
+				text: 'Por favor verifique su información nuevamente',
+			})
+		}
 	}
 
 	return <ContactForm handleChange={handleChange} handleSubmit={handleSubmit} />

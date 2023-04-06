@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Outlet } from 'react-router-dom'
 import './FooterLayout.css'
 
 import '@fontsource/roboto/300.css'

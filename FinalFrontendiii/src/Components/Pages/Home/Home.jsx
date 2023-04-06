@@ -10,8 +10,10 @@ const Home = () => {
 		<div className={state.isDark ? 'home home-dark' : 'home home-light'}>
 			<h1>Bienvenido a nuestro portal</h1>
 			<h3>Conoce a nuestros profesionales</h3>
-			<Link to={'/dentists'} className='access-link'>
-				<Button variant='contained' className='access-button'>Ingresar</Button>
+			<Link to={'/dentists'} className="access-link">
+				<Button variant="contained" className="access-button">
+					Ingresar
+				</Button>
 			</Link>
 		</div>
 	)

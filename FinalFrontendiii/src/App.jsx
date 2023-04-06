@@ -1,7 +1,5 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NavbarLayout from './Components/Layout/NavbarLayout/NavbarLayout'
-import FooterLayout from './Components/Layout/FooterLayout/FooterLayout'
 import ThemeContextProvider from './context/ThemeContext.provider'
 import DataContextProvider from './context/DataContext.provider'
 import Home from './Components/Pages/Home/Home'
@@ -10,7 +8,6 @@ import DetailsDentistContainer from './Components/Pages/DetailsDentist/DetailsDe
 import ContactFormContainer from './Components/Pages/Contact/ContactForm.container'
 import FavsContainer from './Components/Pages/Favs/Favs.container'
 import Layout from './Components/Layout/Layout'
-import { ThemeProvider } from '@emotion/react'
 
 function App() {
 	return (

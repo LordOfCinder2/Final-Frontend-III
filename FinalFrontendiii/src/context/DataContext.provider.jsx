@@ -16,7 +16,10 @@ const reducer = (state, action) => {
 		case 'GET_DENTIST':
 			return { ...state, dentist: action.payload }
 		case 'ADD_TO_FAV_DENTISTS':
-			return { ...state, favDentists: JSON.parse(localStorage.getItem('favDentists'))}
+			return {
+				...state,
+				favDentists: JSON.parse(localStorage.getItem('favDentists')),
+			}
 		case 'ADD_TO_LOCAL_STORAGE':
 			addToLocalStorage(action.payload)
 		default:

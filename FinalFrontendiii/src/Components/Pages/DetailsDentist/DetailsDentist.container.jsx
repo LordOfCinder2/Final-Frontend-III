@@ -23,7 +23,7 @@ const DetailsDentistContainer = () => {
 			})
 			.catch((err) => console.log(err))
 		dispatch({ type: 'ADD_TO_FAV_DENTISTS' })
-	},[hasChanged])
+	}, [hasChanged])
 
 	return <DetailsDentist dentist={state.dentist} addToFav={addToFav} />
 }

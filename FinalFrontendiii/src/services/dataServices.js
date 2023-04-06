@@ -17,12 +17,10 @@ export const addToLocalStorage = (dentist) => {
 					dentist,
 				]),
 			)
-    }else{
-					let newArr = favArr.filter(item=>item.id!==dentist.id)
-					localStorage.setItem(
-						`favDentists`,
-						JSON.stringify(newArr))
-				}
+		} else {
+			let newArr = favArr.filter((item) => item.id !== dentist.id)
+			localStorage.setItem(`favDentists`, JSON.stringify(newArr))
+		}
 	} else {
 		localStorage.setItem('favDentists', JSON.stringify([dentist]))
 	}

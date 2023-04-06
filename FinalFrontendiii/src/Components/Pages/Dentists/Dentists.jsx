@@ -3,10 +3,9 @@ import DentistCard from '../../Common/DentistCard/DentistCard'
 import './Dentists.css'
 import { ThemeContext } from '../../../context/ThemeContext.provider'
 
-const Dentists = ({  dataState, addToFav }) => {
-
+const Dentists = ({ dataState, addToFav }) => {
 	const { state } = useContext(ThemeContext)
-	
+
 	return (
 		<div
 			className={

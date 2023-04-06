@@ -21,7 +21,8 @@ const DentistCard = ({ dentist, addToFav }) => {
 					addToFav(dentist)
 				}}
 			>
-				{dataState.favDentists && dataState.favDentists.some((item) => item.id === dentist.id) ? (
+				{dataState.favDentists &&
+				dataState.favDentists.some((item) => item.id === dentist.id) ? (
 					<FavoriteIcon className="card-icon" />
 				) : (
 					<FavoriteBorderIcon className="card-icon" />
