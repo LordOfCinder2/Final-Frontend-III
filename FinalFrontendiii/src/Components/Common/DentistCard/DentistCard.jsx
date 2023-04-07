@@ -19,7 +19,11 @@ const DentistCard = ({ dentist, addToFav }) => {
 				<p className="card-label">{dentist.name}</p>
 			</Link>
 			<IconButton
-				className={state.isDark ? 'card-button card-button-dark' : 'card-button card-button-light'}
+				className={
+					state.isDark
+						? 'card-button card-button-dark'
+						: 'card-button card-button-light'
+				}
 				onClick={() => {
 					addToFav(dentist)
 				}}
