@@ -5,8 +5,8 @@
 }
 :root {
  font-family: "Roboto", sans-serif;
-	--primary-dark-bg-color: rgb(50, 47, 141);
-	--primary-dark-font-color: rgb(255, 250, 243);
+	--primary-dark-bg-color: #322f8d;
+	--primary-dark-font-color: #fffaf3;
 
 	--secondary-dark-bg-color: #242424;
 

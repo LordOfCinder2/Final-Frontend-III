@@ -11,30 +11,34 @@
 	justify-content: center;
 	align-items: center;
 }
-.contact-form .label-text-dark,
-.contact-form .label-text-dark.Mui-focused {
+.contact-form-dark .label-text,
+.contact-form-dark .label-text.Mui-focused {
 	color: var(--primary-dark-font-color);
 }
-.contact-form .label-text-light,
-.contact-form .label-text-light.Mui-focused {
+.contact-form-dark .text {
+	color: var(--primary-dark-font-color);
+}
+.contact-form-dark .text::before {
+	border-bottom: 2px solid var(--primary-dark-font-color);
+}
+.contact-form-dark .text::after {
+	border-bottom: 2px solid var(--primary-dark-bg-color);
+}
+.contact-form-light .label-text {
 	color: var(--primary-light-bg-color);
 }
 
-.contact-form .name-field,
-.contact-form .email-field {
+.contact-form .text-field {
 	margin: 5px;
 	width: 300px;
 }
+
 .contact-form .submit-button {
 	font-size: 1.2rem;
 	margin: 1rem;
 	padding: 0.5rem 3rem;
 }
 
-.contact-form .submit-button-dark {
+.contact-form-dark .submit-button {
 	background-color: var(--primary-dark-bg-color);
-}
-
-.contact-form .submit-button-light {
-	background-color: var(--primary-light-bg-color);
 }

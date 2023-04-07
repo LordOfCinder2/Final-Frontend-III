@@ -18,35 +18,33 @@ const ContactForm = ({ handleSubmit, handleChange }) => {
 			}
 		>
 			<TextField
+				InputProps={{
+					className: 'text',
+				}}
 				InputLabelProps={{
-					className: state.isDark
-						? 'label-text label-text-dark'
-						: 'label-text label-text-light',
+					className: 'label-text'
 				}}
 				label="Nombre"
 				variant="standard"
 				onChange={(e) => handleChange(e, 'name')}
-				className="name-field"
+				className="text-field"
 			/>
 			<TextField
+				InputProps={{
+					className: 'text',
+				}}
 				InputLabelProps={{
-					className: state.isDark
-						? 'label-text label-text-dark'
-						: 'label-text label-text-light',
+					className: 'label-text'
 				}}
 				label="Email"
 				variant="standard"
 				onChange={(e) => handleChange(e, 'email')}
-				className="email-field"
+				className="text-field"
 			/>
 			<Button
 				variant="contained"
 				type="submit"
-				className={
-					state.isDark
-						? 'submit-button submit-button-dark'
-						: 'submit-button submit-button-light'
-				}
+				className='submit-button'
 			>
 				Enviar
 			</Button>

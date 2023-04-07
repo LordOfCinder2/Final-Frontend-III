@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ContactForm from './ContactForm'
 import Swal from 'sweetalert2'
 import { validateEmail, validateName } from '../../../services/dataServices'
+import { ThemeContext } from '../../../context/ThemeContext.provider'
 
 const ContactFormContainer = () => {
+	const {state}=useContext(ThemeContext)
 	const [data, setData] = useState({
 		name: '',
 		email: '',
@@ -25,6 +27,7 @@ const ContactFormContainer = () => {
 			Swal.fire({
 				icon: 'error',
 				text: 'Por favor verifique su información nuevamente',
+				confirmButtonColor: state.isDark? '#322f8d': '#1976d2',
 			})
 		}
 	}

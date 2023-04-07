@@ -11,13 +11,15 @@ const DentistCard = ({ dentist, addToFav }) => {
 	const dataState = useContext(DataContext).state
 	const { state } = useContext(ThemeContext)
 	return (
-		<div className={state.isDark ? 'card card-dark' : 'card card-light'}>
-			<div className='info-card'>
-				<Link to={`/dentist/${dentist.id}`} className="card-link">
+		<div className="card-container">
+			<Link
+				to={`/dentist/${dentist.id}`}
+				className={state.isDark ? 'card card-dark' : 'card card-light'}
+			>
 				<p className="card-label">{dentist.name}</p>
 			</Link>
 			<IconButton
-				className="card-button"
+				className={state.isDark ? 'card-button card-button-dark' : 'card-button card-button-light'}
 				onClick={() => {
 					addToFav(dentist)
 				}}
@@ -29,8 +31,6 @@ const DentistCard = ({ dentist, addToFav }) => {
 					<FavoriteBorderIcon className="card-icon" />
 				)}
 			</IconButton>
-			</div>
-			
 		</div>
 	)
 }
