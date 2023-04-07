@@ -17,10 +17,12 @@ const DentistCardDetailed = ({ dentist, addToFav }) => {
 					: 'detailed-dentist-card detailed-dentist-card-light'
 			}
 		>
+			<div className='text-box'>
 			<h1>{dentist.name}</h1>
 			<h2>{dentist.phone}</h2>
 			<h3>{dentist.email}</h3>
 			<p>{dentist.website}</p>
+			</div>
 			<IconButton
 				className="details-button"
 				onClick={() => {

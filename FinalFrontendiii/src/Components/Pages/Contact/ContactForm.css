@@ -1,39 +1,40 @@
-
-.contact-form-dark{
- background-color: var(--secondary-dark-bg-color);
+.contact-form-dark {
+	background-color: var(--secondary-dark-bg-color);
 }
-.contact-form-light{
- background-color: var(--secondary-light-bg-color);
+.contact-form-light {
+	background-color: var(--secondary-light-bg-color);
 }
-.contact-form{
- flex-grow: 1;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+.contact-form {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.contact-form .label-text-dark, .contact-form .label-text-dark.Mui-focused{
- color: aliceblue;
+.contact-form .label-text-dark,
+.contact-form .label-text-dark.Mui-focused {
+	color: var(--primary-dark-font-color);
 }
-.contact-form .label-text-light, .contact-form .label-text-light.Mui-focused{
- color: var(--primary-light-bg-color);
-}
-
-.contact-form .name-field{
- margin: 5px;
-}
-.contact-form .email-field{
- margin: 5px;
-}
-.contact-form .submit-button{
- margin: 5px;
- padding: 8px 25px;
+.contact-form .label-text-light,
+.contact-form .label-text-light.Mui-focused {
+	color: var(--primary-light-bg-color);
 }
 
-.contact-form .submit-button-dark{
- background-color: var(--primary-dark-bg-color);
+.contact-form .name-field,
+.contact-form .email-field {
+	margin: 5px;
+	width: 300px;
+}
+.contact-form .submit-button {
+	font-size: 1.2rem;
+	margin: 1rem;
+	padding: 0.5rem 3rem;
 }
 
-.contact-form .submit-button-light{
- background-color: var(--primary-light-bg-color);
+.contact-form .submit-button-dark {
+	background-color: var(--primary-dark-bg-color);
+}
+
+.contact-form .submit-button-light {
+	background-color: var(--primary-light-bg-color);
 }

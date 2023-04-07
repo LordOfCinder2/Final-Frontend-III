@@ -1,24 +1,50 @@
-.card{
- width: 250px;
- height: 50px;
- display: flex;
- align-items: center;
- margin: 5px;
- padding: 5px;
- border-radius: 10px;
+.card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* display: grid;
+ grid-template-rows: auto 50px;
+ grid-template-columns: 90% 10%;
+ grid-template-areas: 'img img' 'label icon'; */
+	margin: 5px;
+	border-radius: 1rem;
+ height: 300px;
+	width: 250px;
+ background-image: url(/src/assets/doctor.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ position: relative;
 }
-.card-dark{
- border: 2px solid var(--primary-dark-font-color);
+.card-dark {
+	border: 1px solid var(--primary-dark-font-color);
 }
-.card-dark .card-link, .card-light .card-link{
- flex-grow: 1;
+.card .info-card{
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: .5rem;
+width: 100%;
+border-radius: 0 0 1rem 1rem;
 }
-.card-dark .card-link .card-label, .card-dark .card-button .card-icon{
- color: var(--primary-dark-font-color);
+
+.card-dark .info-card{
+ background-color: var(--primary-dark-bg-color);
 }
-.card-light{
- border: 2px solid var(--primary-light-bg-color);
+.card-light .info-card{
+ background-color: var(--primary-light-bg-color);
 }
-.card-light .card-link .card-label, .card-light .card-button .card-icon{
- color: var(--primary-light-bg-color);
+
+.card-dark .card-label,
+.card-dark .card-button .card-icon {
+	color: var(--primary-dark-font-color);
+}
+.card-light {
+	border: 1px solid var(--primary-light-bg-color);
+}
+.card-light .card-label,
+.card-light .card-button .card-icon {
+	color: var(--secondary-light-bg-color);
 }

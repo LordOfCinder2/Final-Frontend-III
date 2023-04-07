@@ -1,10 +1,11 @@
-.favs{
- flex-grow: 1;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
+.favs {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
-.favs-dark{
- background-color: var(--secondary-dark-bg-color);
+.favs-dark {
+	background-color: var(--secondary-dark-bg-color);
 }

@@ -1,32 +1,39 @@
-a{
- text-decoration: none;
+a {
+	text-decoration: none;
 }
-.navbar{
- display: grid;
- height: 100%;
- grid-template-columns: 8% 84% 8%;
+.navbar {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 5% 90% 5%;
 }
-.button-container{
- grid-column-start: 2;
- justify-content: center;
- align-items: center;
-}
-
-.navbar a button{
- color:var(--primary-dark-font-color);
-}
-.navbar-dark{
-background-color: var(--primary-dark-bg-color);
-}
-.navbar-light{
- background-color: var(--primary-light-bg-color);
+.button-container {
+	grid-column-start: 2;
+	justify-content: center;
+	align-items: center;
 }
 
-.navbar-dark .active-page button{
- color: var(--secondary-light-bg-color) ;
- background-color: var(--secondary-dark-bg-color);
+.navbar .page .botones {
+	color: var(--primary-dark-font-color);
+	font-size: 1.5rem;
 }
-.navbar-light .active-page button{
- color: var(--primary-light-bg-color);
- background-color: var(--secondary-light-bg-color);
+.navbar .active-page .botones {
+	font-size: 1.5rem;
+}
+.navbar .switch {
+	align-self: center;
+}
+.navbar-dark {
+	background-color: var(--primary-dark-bg-color);
+}
+.navbar-light {
+	background-color: var(--primary-light-bg-color);
+}
+
+.navbar-dark .active-page button {
+	color: var(--secondary-light-bg-color);
+	background-color: var(--secondary-dark-bg-color);
+}
+.navbar-light .active-page button {
+	color: var(--primary-light-bg-color);
+	background-color: var(--secondary-light-bg-color);
 }

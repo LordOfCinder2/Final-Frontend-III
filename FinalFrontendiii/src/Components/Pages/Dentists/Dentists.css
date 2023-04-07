@@ -1,13 +1,14 @@
-.dentists-list{
- flex-grow: 1;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
+.dentists-list {
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
-.dentists-list-dark{
- background-color: var(--secondary-dark-bg-color);
+.dentists-list-dark {
+	background-color: var(--secondary-dark-bg-color);
 }
-.dentists-list-light{
- background-color: var(--secondary-light-bg-color);
+.dentists-list-light {
+	background-color: var(--secondary-light-bg-color);
 }

@@ -1,38 +1,49 @@
 .detailed-dentist-card {
 	position: relative;
 	border-radius: 20px;
-	padding: 2rem;
+	padding: 1rem;
 	margin: 2rem;
 	width: 400px;
 	height: 250px;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-evenly; */
+	background-image: url(/src/assets/doctor.jpg);
+	background-size: cover;
+	background-position: 0 -75px;
 }
 .detailed-dentist-card-dark {
 	border: 2px solid var(--primary-dark-bg-color);
-	color: var(--primary-dark-font-color);
+	color: var(--primary-dark-bg-color);
 }
 .detailed-dentist-card-light {
 	border: 2px solid var(--primary-light-bg-color);
 	color: var(--primary-light-bg-color);
 }
-.detailed-dentist-card h1{
- max-width: 250px;
+.detailed-dentist-card .text-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: .5rem;
+	height: 95%;
+	max-width: 300px;
+	background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
 }
-
 
 .detailed-dentist-card .details-button {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 10px;
+	right: 10px;
 }
-.detailed-dentist-card .details-button .details-icon{
-font-size: 3rem;
+.detailed-dentist-card .details-button .details-icon {
+	font-size: 3rem;
 }
-.detailed-dentist-card-dark .details-button .details-icon{
- color: var(--primary-dark-font-color);
+.detailed-dentist-card-dark .details-button .details-icon {
+	color: var(--primary-dark-bg-color);
 }
-.detailed-dentist-card-light .details-button .details-icon{
- color: var(--primary-light-bg-color);
+.detailed-dentist-card-light .details-button .details-icon {
+	color: var(--primary-light-bg-color);
 }

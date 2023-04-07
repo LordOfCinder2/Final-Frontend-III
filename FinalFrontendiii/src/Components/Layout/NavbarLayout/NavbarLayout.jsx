@@ -1,9 +1,5 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
-import '@fontsource/roboto/300.css'
-import '@fontsource/roboto/400.css'
-import '@fontsource/roboto/500.css'
-import '@fontsource/roboto/700.css'
 import { Button, ButtonGroup, Switch } from '@mui/material'
 import './NavbarLayout.css'
 import { ThemeContext } from '../../../context/ThemeContext.provider'
@@ -14,6 +10,7 @@ const NavbarLayout = () => {
 	const handleChange = () => {
 		dispatch({ type: 'CHANGE_THEME' })
 	}
+	
 
 	return (
 		<div className="navbar-layout">
@@ -49,6 +46,7 @@ const NavbarLayout = () => {
 					</NavLink>
 				</ButtonGroup>
 				<Switch
+				className='switch'
 					inputProps={{ 'aria-label': 'controlled' }}
 					onChange={handleChange}
 					defaultChecked

@@ -1,9 +1,8 @@
-
 .footer-layout .footer {
- height: 100%;
-	font-size: 0.8rem;
+	height: 100%;
+	font-size: 1rem;
 	font-weight: 300;
- padding: .5rem;
+	padding: 0.5rem;
 }
 .footer-layout .footer-dark {
 	background-color: var(--primary-dark-bg-color);
