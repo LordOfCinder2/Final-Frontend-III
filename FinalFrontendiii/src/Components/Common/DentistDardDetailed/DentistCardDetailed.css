@@ -5,9 +5,6 @@
 	margin: 2rem;
 	width: 400px;
 	height: 250px;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: space-evenly; */
 	background-image: url(/src/assets/doctor.jpg);
 	background-size: cover;
 	background-position: 0 -75px;
@@ -24,13 +21,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: .5rem;
+	padding: 0.5rem;
 	height: 95%;
 	max-width: 300px;
 	background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.5px);
 }
 
 .detailed-dentist-card .details-button {

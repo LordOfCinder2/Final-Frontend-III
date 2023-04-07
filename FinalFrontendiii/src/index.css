@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 }
 :root {
- font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	--primary-dark-bg-color: #322f8d;
 	--primary-dark-font-color: #fffaf3;
-
+	
 	--secondary-dark-bg-color: #242424;
 
+	--primary-light-bg-color: #1976d2;
 	--secondary-light-bg-color: #ffffff;
 
- --primary-light-bg-color: #1976d2;
 }

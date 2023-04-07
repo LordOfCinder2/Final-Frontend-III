@@ -1,12 +1,12 @@
-.details-dentist{
- flex-grow: 1;
- display: flex;
- justify-content: center;
- align-items: center;
+.details-dentist {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.details-dentist-dark{
- background-color: var(--secondary-dark-bg-color);
+.details-dentist-dark {
+	background-color: var(--secondary-dark-bg-color);
 }
-.details-dentist-light{
- background-color: var(--secondary-light-bg-color);
+.details-dentist-light {
+	background-color: var(--secondary-light-bg-color);
 }
