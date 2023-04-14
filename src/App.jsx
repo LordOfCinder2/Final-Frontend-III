@@ -12,7 +12,6 @@ import Layout from './Components/Layout/Layout'
 function App() {
 	return (
 		<BrowserRouter>
-
 			<ThemeContextProvider>
 				<DataContextProvider>
 					<Routes>
